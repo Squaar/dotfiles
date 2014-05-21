@@ -7,13 +7,15 @@ filetype plugin on
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
+let g:syntastic_python_checkers = ['python']
 
 "NERDTree
 map <C-m> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "Commentary
-autocmd FileType python set commentstring=#\ %s
+autocmd FileType python set commentstring=#%s
+autocmd FileType vim set commentstring=\"%s
 
 "style
 set nu
