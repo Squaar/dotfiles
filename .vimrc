@@ -12,6 +12,9 @@ let g:syntastic_auto_loc_list=1
 map <C-m> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+"Commentary
+autocmd FileType python set commentstring=#\ %s
+
 "style
 set nu
 syntax on
@@ -19,6 +22,7 @@ colorscheme elflord
 
 "tabs
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+autocmd FileType python set expandtab tabstop=4 softtabstop=4 shiftwidth=4
 
 "remember last cursor position
 if has("autocmd")
