@@ -8,6 +8,7 @@ alias ll="ls -l"
 alias lah="ls -lah"
 alias sublime="subl"
 alias emacs="emacs -nw"
+alias ack="ack-grep"
 
 #path
 typeset -U path
