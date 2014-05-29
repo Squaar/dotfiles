@@ -9,9 +9,11 @@ filetype plugin on
 " general style/behavior
 syntax on
 set nocompatible
-set nu
+set relativenumber
+set number
 set hidden
 set autoindent
+set showcmd
 filetype plugin indent on
 set showmatch
 set smartcase
@@ -30,17 +32,15 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <leader>vrc :vsp ~/.vimrc
+nnoremap <leader>vrc :vsp $MYVIMRC<CR>
+nnoremap <leader>svrc :so $MYVIMRC<CR>
+
 
 " Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_python_checkers = ['flake8']
-
-" NERDTree
-map <C-m> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Commentary
 autocmd FileType python set commentstring=#\ %s
@@ -54,3 +54,8 @@ autocmd FileType python set expandtab tabstop=4 softtabstop=4 shiftwidth=4
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" Explore stuff
+let g:netrw_browse_split = 2
+let g:netrw_altv = 1
+let g:netrw_liststyle = 3 " Tree mode
