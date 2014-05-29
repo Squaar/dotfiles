@@ -35,7 +35,6 @@ nnoremap <C-l> <C-w>l
 nnoremap <leader>vrc :vsp $MYVIMRC<CR>
 nnoremap <leader>svrc :so $MYVIMRC<CR>
 
-
 " Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
@@ -59,3 +58,7 @@ endif
 let g:netrw_browse_split = 2
 let g:netrw_altv = 1
 let g:netrw_liststyle = 3 " Tree mode
+
+" NERDTree
+map <leader>m :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
