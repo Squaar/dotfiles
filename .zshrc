@@ -12,10 +12,15 @@ alias ack="ack-grep"
 
 #path
 typeset -U path
+export GOPATH=$HOME/brogramming/go
+export GOROOT=$HOME/bin/go
 path=(
 	$path
 	~/bin
 	~/bin/tomcat/bin
+	~/bin/mongodb/bin
+	$GOROOT/bin
+	$GOPATH/bin
 )
 
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
