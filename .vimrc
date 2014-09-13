@@ -86,6 +86,7 @@ let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_java_javac_classpath = "src"
 
 " Commentary
 autocmd FileType python set commentstring=#\ %s
