@@ -1,0 +1,9 @@
+[user]
+	name = Matt Dumford
+	email = mdumford99@gmail.com
+[color]
+	ui = true
+[alias]
+	co = checkout
+	st = status -s
+	br = branch
