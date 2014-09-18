@@ -33,6 +33,9 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'fatih/vim-go'
 Plugin 'squaar/molokai'
 Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
