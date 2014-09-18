@@ -9,6 +9,8 @@ alias lah="ls -lah"
 alias sublime="subl"
 alias emacs="emacs -nw"
 alias ack="ack-grep"
+alias netflix="netflix-desktop"
+alias please="sudo"
 
 #path
 typeset -U path

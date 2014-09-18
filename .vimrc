@@ -31,6 +31,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'fatih/vim-go'
+Plugin 'squaar/molokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,9 +51,6 @@ filetype plugin indent on    " required
 scriptencoding utf-8
 set encoding=utf-8
 
-" load plugins
-" execute pathogen#infect()
-
 " general style/behavior
 syntax on
 set nocompatible
@@ -63,10 +61,18 @@ set autoindent
 set showcmd
 set showmatch
 set smartcase
+set cursorline
+
+" Save on focus lost
+au FocusLost * :wa
+
+" Colorschemes
+colorscheme molokai
+" colorscheme elflord
+
+" Only enable these if swap files get super annoying
 " set nobackup
 " set noswapfile
-au FocusLost * :wa  " save on lost focus
-colorscheme elflord
 
 " mapping
 let mapleader = ","
@@ -78,6 +84,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+" Editing .vimrc
 nnoremap <leader>vrc :vsp $MYVIMRC<CR>
 nnoremap <leader>svrc :so $MYVIMRC<CR>
 
@@ -92,19 +99,18 @@ let g:syntastic_java_javac_classpath = "src"
 autocmd FileType python set commentstring=#\ %s
 autocmd FileType vim set commentstring=\"\ %s
 
+" Molokai
+let g:molokai_original=2
+
 " tabs
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+" use spaces for python because PEP8
 autocmd FileType python set expandtab tabstop=4 softtabstop=4 shiftwidth=4
 
 " remember last cursor position
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
-
-" Explore stuff
-let g:netrw_browse_split = 2
-let g:netrw_altv = 1
-let g:netrw_liststyle = 3 " Tree mode
 
 " NERDTree
 map <leader>m :NERDTreeToggle<CR>
