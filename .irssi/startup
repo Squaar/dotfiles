@@ -1,2 +1,3 @@
 /script load nicklist
 /nicklist screen
+/ignore * JOINS PARTS QUITS NICKS
