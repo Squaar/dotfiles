@@ -35,7 +35,7 @@ Plugin 'squaar/molokai'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
-
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -119,3 +119,6 @@ endif
 " NERDTree
 map <leader>m :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" CtrlP
+" let g:ctrlp_working_path_mode = 'r'
