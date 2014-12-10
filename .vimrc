@@ -36,7 +36,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/powerline'
+" Plugin 'Lokaltog/powerline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -99,6 +99,8 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_java_javac_classpath = "src"
+let g:syntastic_cpp_compiler = "g++"
+let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall"
 
 " Commentary
 autocmd FileType python set commentstring=#\ %s

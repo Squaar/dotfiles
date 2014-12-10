@@ -21,7 +21,7 @@ chatnets = {
   freenode = {
     type = "IRC";
     nick = "Squaar";
-    autosendcmd = "/nick Squaar;/msg nickserv identify hamsters99;wait 2000;/window goto nickserv;/wc;/window 1";
+    autosendcmd = "/nick Squaar;/msg nickserv identify hamsters99;wait 5000;/window goto nickserv;/wc;/window 1";
   };
   acm = { type = "IRC"; nick = "Squaar"; realname = "Matt Dumford"; };
 };

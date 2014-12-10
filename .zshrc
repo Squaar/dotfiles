@@ -22,12 +22,14 @@ path=(
 	~/bin
 	~/bin/tomcat/bin
 	~/bin/mongodb/bin
+	~/bin/andriod-studio/bin
 	$GOROOT/bin
 	$GOPATH/bin
 )
 
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+# export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export TERM="xterm-256color"
+export VISUALWORKS="/home/mdumford/bin/visualWorks"
 
 
 # Set up the prompt
