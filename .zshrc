@@ -22,7 +22,7 @@ path=(
 	~/bin
 	~/bin/tomcat/bin
 	~/bin/mongodb/bin
-	~/bin/andriod-studio/bin
+	~/bin/android-studio/bin
 	$GOROOT/bin
 	$GOPATH/bin
 )
