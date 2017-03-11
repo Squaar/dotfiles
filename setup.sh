@@ -5,3 +5,6 @@ ln -s ~/bin/dotfiles/.vim ~/.vim
 git submodule init
 git submodule update
 vim +PluginInstall +qall
+
+git config --global user.name "Matt Dumford"
+git config --global user.email mdumford99@gmail.com
