@@ -9,9 +9,11 @@ alias lah="ls -lah"
 alias sublime="subl"
 alias emacs="emacs -nw"
 alias python="python3"
+alias venv="python -m venv .env"
+alias venv-a="source .env/bin/activate"
+alias venv-d="disconnect"
 alias irssi="screen irssi"
 alias ack="ack-grep"
-alias netflix="netflix-desktop"
 alias please="sudo"
 
 #path
@@ -31,6 +33,7 @@ path=(
 # export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export TERM="xterm-256color"
 export VISUALWORKS="/home/mdumford/bin/visualWorks"
+export EDITOR="/usr/bin/vim"
 
 
 # Set up the prompt
