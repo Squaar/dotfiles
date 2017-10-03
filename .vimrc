@@ -125,3 +125,4 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " CtrlP
 " let g:ctrlp_working_path_mode = 'r'
+let g:ctrlp_show_hidden=1
