@@ -7,6 +7,7 @@ alias lah="ls -lah"
 alias sublime="subl"
 alias emacs="emacs -nw"
 alias python="python3"
+alias pip="pip3"
 alias venv="python -m venv .env"
 alias venv-a="source .env/bin/activate"
 alias venv-d="deactivate"
@@ -17,6 +18,7 @@ alias please="sudo"
 typeset -U path
 export GOPATH=$HOME/brogramming/go
 export GOROOT=$HOME/bin/go
+export PYTHONPATH=$PYTHONPATH:$HOME/brogramming/python
 path=(
 	$path
 	~/bin
