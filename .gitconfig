@@ -4,6 +4,5 @@
 [color]
 	ui = true
 [alias]
-	co = checkout
 	st = status -s
-	br = branch
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
