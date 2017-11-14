@@ -11,9 +11,7 @@ alias pip="pip3"
 alias venv="python -m venv .env"
 alias venv-a="source .env/bin/activate"
 alias venv-d="deactivate"
-alias irssi="screen irssi"
-alias ack="ack-grep"
-alias please="sudo"
+alias sqlite3="sqlite3 -column -header"
 
 typeset -U path
 export GOPATH=$HOME/brogramming/go
